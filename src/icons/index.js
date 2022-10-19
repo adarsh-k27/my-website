@@ -1,6 +1,8 @@
 export {
     AiFillHome,
-    AiOutlineUser}
+    AiOutlineUser,
+    AiOutlineBgColors
+}
 from 'react-icons/ai'
 export {MdOutlineWork} from 'react-icons/md'
 export {

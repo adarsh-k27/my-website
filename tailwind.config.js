@@ -45,8 +45,8 @@ module.exports = {
         colors: {
           sidebarColor: "#242730",
           darkBgColor: "#16160E",
-          cartNumBg: "#e80013",
-          primary: "#f5f3f3",
+          lightBgColor: "#F8EBD4",
+          lightSideBar: "#EAD9CA",
           header: "#e1e1e1",
           image: "rgba(256,256,256,0.4)",
         },

@@ -1,17 +1,77 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
-function LandingPage ({setOpen,open}) {
-  
+import Typical from 'react-typical'
+import { ColorPicker, ReactButton } from '../components'
+import { motion } from 'framer-motion'
+function LandingPage ({ setOpen, open }) {
   return (
     <div className='p-1 md:p-4 w-screen md:w-full '>
       <div className='w-full md:hidden flex flex-row justify-between gap-1'>
-        <AiOutlineMenu className='text-gray-700 text-md' onClick={()=>{setOpen(true)}} />
-        <p className='text-xl font-[Dancing Script] font-extralight text-white/50 w-auto ml-[.8REM]'>
+        <AiOutlineMenu
+          className='text-gray-700 text-md'
+          onClick={() => {
+            setOpen(true)
+          }}
+        />
+        <p className='text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8REM]'>
           <span className='text-red-500 font-thin text-xl font-[Oswald]'>
             A
           </span>
           darsh
         </p>
+      </div>
+      <div className='px-[.5rem] md:px-3 py-1 md:py-0 text-red-400 w-full h-full grid grid-cols-1 md:grid-cols-[70%,30%]'>
+        {/* Name writing section  */}
+        <div className='w-full md:max-w-[600px] h-auto flex flex-col items-center justify-center gap-5'>
+          <div className='w-full flex flex-wrap justify-center items-center'>
+            <p className='dark:text-white/80 text-black/80 font-normal tracking-wide font-[oswald] text-xl md:text-2xl'>
+              Hello , my name is{' '}
+              <span className='Display text-red-500'>Adarsh k</span>{' '}
+            </p>
+          </div>
+          <div className='w-full flex flex-col gap-5 md:gap-3 justify-center items-center'>
+            <p className='dark:text-white/80 text-black/80 font-normal tracking-wider font-[oswald] text-xl md:text-3xl'>
+              I'm a
+            </p>
+            <span className='Display text-red-500 font-bold text-xl md:text-2xl'>
+              <Typical
+                steps={[
+                  'Web Developer',
+                  3000,
+                  'Figma Designer',
+                  3000,
+                  'Web Designer',
+                  3000
+                ]}
+                loop={5}
+                wrapper='p'
+              />
+            </span>{' '}
+          </div>
+          <div className='w-full flex flex-col md:flex-row gap-4 md:gap-10 mt-6'>
+            <ReactButton
+            animate={true}
+              text='Resume'
+              bg='bg-red-500'
+              hover='hover:dark:bg-white hover:bg-black/80'
+              txt='text-white/70 group-hover:dark:text-black/75 group-hover:text-white'
+            />
+            <ReactButton
+              text='More About'
+              bg='bg-white/60 dark:bg-darkBgColor'
+              hover='hover:dark:bg-blue-500 hover:bg-blue-500'
+              txt='text-blue-500'
+            />
+          </div>
+
+          <div className='w-full flex flex-wrap justify-center items-center mt-14'>
+            <p className='text-gray-500  font-normal tracking-wider font-[oswald] text-sm'>
+              im a extensive developer with self learning.Improving my skills
+              through lots of my projects.
+            </p>
+          </div>
+        </div>
+        
       </div>
     </div>
   )
