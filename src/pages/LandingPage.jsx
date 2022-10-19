@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Typical from 'react-typical'
-import { ColorPicker, ReactButton } from '../components'
+import { ColorPicker, MoodChanger, ReactButton } from '../components'
 import { motion } from 'framer-motion'
 function LandingPage ({ setOpen, open }) {
   return (
@@ -71,7 +71,7 @@ function LandingPage ({ setOpen, open }) {
             </p>
           </div>
         </div>
-        
+        <MoodChanger />
       </div>
     </div>
   )

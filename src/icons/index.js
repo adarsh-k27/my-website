@@ -4,10 +4,15 @@ export {
     AiOutlineBgColors
 }
 from 'react-icons/ai'
-export {MdOutlineWork} from 'react-icons/md'
+export {
+    MdOutlineWork,
+    MdModeNight
+}
+from 'react-icons/md'
 export {
     FaRegHandshake
 } from 'react-icons/fa'
 export {
-    BiArrowBack
+    BiArrowBack,
+    BiSun
 } from 'react-icons/bi'
