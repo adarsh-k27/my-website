@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { BiSun, MdModeNight } from '../icons'
 
-function MoodChange ({}) {
-  const [lightMode, setLightMode] = useState(false)
+function MoodChange ({ setMode, mode }) {
+  const [lightMode, setLightMode] = useState(mode !== 'dark')
+
   return (
     <motion.div
       whileTap={{
@@ -12,6 +13,7 @@ function MoodChange ({}) {
       className='w-7 h-6 flex justify-center items-center rounded-full cursor-pointer bg-lightSideBar dark:bg-sidebarColor'
       onClick={() => {
         setLightMode(prev => !prev)
+        setMode(mode !== 'dark' ? 'dark' : 'light')
       }}
     >
       {lightMode ? (
