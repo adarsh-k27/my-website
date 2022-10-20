@@ -1,10 +1,12 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { AiOutlineBgColors } from '../icons'
 import { Colors } from '../components'
 import { motion } from 'framer-motion'
 import Portfolio_Context from '../context'
 function ColorSelecter ({ setShow, show }) {
   const { color_change } = useContext(Portfolio_Context)
+  const [colorChanged, setColorChanged] = useState(false)
+
   return (
     <div
       className={`w-225 h-8 flex flex-row gap-3 cursor-pointer rounded-full `}
@@ -24,7 +26,11 @@ function ColorSelecter ({ setShow, show }) {
           setShow(prev => !prev)
         }}
       >
-        <AiOutlineBgColors className={` text-${color_change} text-xl`} />
+        <AiOutlineBgColors
+          className={` ${
+            color_change ? `text-${color_change}` : `text-red-500`
+          } text-xl`}
+        />
       </motion.div>
       <motion.div
         initial={{ right: 0, x: 0, opacity: 0 }}
@@ -37,11 +43,12 @@ function ColorSelecter ({ setShow, show }) {
             duration: 0.5
           }
         }}
-        className={`${!show &&'hidden'} flex flex-row gap-2 items-center justify-center`}
+        className={`${!show &&
+          'hidden'} flex flex-row gap-2 items-center justify-center`}
       >
-        <Colors color={'orange-400'} />
-        <Colors color={'blue-500'} />
-        <Colors color={'red-500'} />
+        <Colors color={'red-500'} bg={'bg-red-500'} />
+        <Colors color={'lime-500'} bg={'bg-lime-500'} />
+        <Colors color={'blue-500'} bg={'bg-blue-500'} />
       </motion.div>
     </div>
   )
