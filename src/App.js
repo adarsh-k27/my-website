@@ -23,15 +23,15 @@ function App() {
             <MoodChanger setMode={setMode} mode={mode} />{" "}
           </div>{" "}
         </div>{" "}
-        <div className='w-screen h-screen dark:bg-darkBgColor bg-lightBgColor'>
-          <div div className='w-full h-full grid grid-cols-[20%,80%] gap-2'>
+        <div className='w-screen h:auto md:h-screen dark:bg-darkBgColor bg-lightBgColor'>
+          < div className='w-full h-full grid grid-cols-[20%,80%] gap-2'>
             {" "}
             {/* Sidebar */}{" "}
             <SideBar open={openNavSmallDevice} setOpen={setOpen} />{" "}
             {/* <LandingPage open={openNavSmallDevice} setOpen={setOpen} />{" "} */}
-            <div className="h-auto bg-lightBgColor dark:bg-darkBgColor">
+            
               < AboutPage />
-            </div>
+            
           </div>{" "}
         </div>{" "}
       </div>{" "}

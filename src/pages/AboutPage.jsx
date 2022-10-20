@@ -5,7 +5,7 @@ import Portfolio_Context from '../context'
 function AboutPage () {
   const { color_change } = useContext(Portfolio_Context)
   return (
-    <div className='w-screen md:w-full h-screen md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] py-[1.3rem] md:py-2'>
+    <div className='w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] py-[1.3rem] md:py-2'>
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
         <h1
