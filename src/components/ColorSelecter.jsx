@@ -47,7 +47,6 @@ function ColorSelecter ({ setShow, show }) {
           'hidden'} flex flex-row gap-2 items-center justify-center`}
       >
         <Colors color={'red-500'} bg={'bg-red-500'} />
-        <Colors color={'lime-500'} bg={'bg-lime-500'} />
         <Colors color={'blue-500'} bg={'bg-blue-500'} />
       </motion.div>
     </div>

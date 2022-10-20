@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import Typical from 'react-typical'
-import {  ReactButton } from '../components'
-
+import { ReactButton } from '../components'
+import profile from '../assets/portfolio-profile.jpg'
 import Portfolio_Context from '../context'
+import { motion } from 'framer-motion'
 function LandingPage ({ setOpen, open }) {
   const { color_change } = useContext(Portfolio_Context)
   return (
@@ -15,7 +16,7 @@ function LandingPage ({ setOpen, open }) {
             setOpen(true)
           }}
         />
-        <p className='text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8REM]'>
+        <p className='text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]'>
           <span
             className={`text-${color_change} font-thin text-xl font-[Oswald]`}
           >
@@ -39,7 +40,9 @@ function LandingPage ({ setOpen, open }) {
             <p className='dark:text-white/80 text-black/80 font-normal tracking-wider font-[oswald] text-xl md:text-3xl'>
               I'm a
             </p>
-            <span className={`Display text-${color_change} font-bold text-xl md:text-2xl`}>
+            <span
+              className={`Display text-${color_change} font-bold text-xl md:text-2xl`}
+            >
               <Typical
                 steps={[
                   'Web Developer',
@@ -58,7 +61,7 @@ function LandingPage ({ setOpen, open }) {
             <ReactButton
               animate={true}
               text='Resume'
-              bg={`bg-${color_change&&color_change}`}
+              bg={`bg-${color_change && color_change}`}
               hover='hover:dark:bg-white hover:bg-black/80'
               txt='text-white/70 dark:group-hover:text-black/80 group-hover:text-white/80'
             />
@@ -80,6 +83,20 @@ function LandingPage ({ setOpen, open }) {
             </p>
           </div>
         </div>
+        {/* image section */}
+        <motion.div
+          transition={{
+            duration: 0.8
+          }}
+          className='w-full max-w-[210px] h-full flex items-center justify-center ml-7 mt-5'
+        >
+          <img
+            src={profile}
+            alt='my self'
+            srcset=''
+            className='dark:bg-opacity-80 dark:opacity-80 w-full h-[65%] dark:h-[90%] object-cover '
+          />
+        </motion.div>
       </div>
     </div>
   )

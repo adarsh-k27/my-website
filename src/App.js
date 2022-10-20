@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { ColorPicker, MoodChanger, SideBar } from "./components";
-import { LandingPage } from "./pages";
+import { LandingPage,AboutPage } from "./pages";
 import { AnimatePresence } from "framer-motion";
 import Portfolio_Context from "./context";
 
@@ -10,7 +10,9 @@ function App() {
   const [show,setShow]=useState(false)
   return (
     <AnimatePresence>
-      <div className={`App ${mode}`}>
+      < div className = {
+        `App ${mode}`
+      } >
         <div className='relative flex flex-col gap-3'>
           <div div className = {
             `absolute top-3 ${show ? "-right-[6rem]":"-right-[9rem]"}`
@@ -26,7 +28,10 @@ function App() {
             {" "}
             {/* Sidebar */}{" "}
             <SideBar open={openNavSmallDevice} setOpen={setOpen} />{" "}
-            <LandingPage open={openNavSmallDevice} setOpen={setOpen} />{" "}
+            {/* <LandingPage open={openNavSmallDevice} setOpen={setOpen} />{" "} */}
+            <div className="h-auto bg-lightBgColor dark:bg-darkBgColor">
+              < AboutPage />
+            </div>
           </div>{" "}
         </div>{" "}
       </div>{" "}

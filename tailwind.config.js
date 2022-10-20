@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx,html}"], ///*.{html,js}
   darkMode: 'class',
   theme: {
     extend: {
@@ -44,7 +44,7 @@ module.exports = {
         },
         colors: {
           sidebarColor: "#242730",
-          darkBgColor: "#16160E",
+          darkBgColor: "#010300",
           lightBgColor: "#F8EBD4",
           lightSideBar: "#EAD9CA",
           header: "#e1e1e1",
