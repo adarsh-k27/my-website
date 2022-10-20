@@ -1,11 +1,24 @@
 import React, { useContext } from 'react'
-import { ReactButton } from '../components'
+import { Certificate, ReactButton, Skill } from '../components'
 import Portfolio_Context from '../context'
-
+import {
+  AiFillHtml5,
+  FaBootstrap,
+  FaFigma,
+  FaNodeJs,
+  FaReact,
+  SiExpress,
+  SiJavascript,
+  SiMongodb,
+  SiPostman,
+  SiRedux,
+  SiTailwindcss,
+  AiFillGithub
+} from '../icons'
 function AboutPage () {
   const { color_change } = useContext(Portfolio_Context)
   return (
-    <div className='w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] py-[1.3rem] md:py-2'>
+    <div className='w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-2'>
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
         <h1
@@ -36,8 +49,80 @@ function AboutPage () {
             txt='text-white/70 dark:group-hover:text-black/80 group-hover:text-white/80'
           />
         </div>
+        <div className='w-full mt-3 md:mt-9 flex flex-row items-center justify-center gap-4'>
+          <Certificate text={'computer degree certificate'} />
+          <Certificate text={'zen class mern stack certificate'} />
+        </div>
       </div>
-      <h1 className='text-white'>Skill section</h1>
+      {/* Skill section */}
+      <div className='w-full h-auto px-[.5rem] md:px-0'>
+        <h1 className='text-md  md:text-lg font-[oswald] md:ml-9 text-black/80 dark:text-white/80 tracking-wider'>
+          Skills
+        </h1>
+        <div className='w-auto h-full flex flex-wrap gap-2 mt-3 md:mt-5 items-center md:items-start justify-center md:justify-items-start'>
+          <Skill
+            icon={<FaReact className='text-red-500 text-3xl' />}
+            text={'REACT'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<FaNodeJs className='text-green-500 text-3xl' />}
+            text={'NODE'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<SiMongodb className='text-green-400 text-3xl' />}
+            text={'MONGODB'}
+            percentage={'90%'}
+          />
+          <Skill
+            icon={<SiExpress className='text-black/50 text-3xl' />}
+            text={'Express'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<SiRedux className='text-violet-500 text-3xl' />}
+            text={'REDUX'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<AiFillHtml5 className='text-red-500 text-3xl' />}
+            text={'HTML&CSS'}
+            percentage={'100%'}
+          />
+          <Skill
+            icon={<SiJavascript className='text-yellow-300 text-3xl' />}
+            text={'JS'}
+            percentage={'98%'}
+          />
+          <Skill
+            icon={<SiTailwindcss className='text-sky-400 text-3xl' />}
+            text={'TAILWIND'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<FaBootstrap className='text-violet-400 text-3xl' />}
+            text={'BOOTSTRAP'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<AiFillGithub className='text-black text-3xl' />}
+            text={'GIT'}
+            percentage={'95%'}
+          />
+          <Skill
+            icon={<FaFigma className='text-sky-600 text-3xl' />}
+            text={'FIGMA'}
+            percentage={'95%'}
+          />
+
+          <Skill
+            icon={<SiPostman className='text-black dark:text-white text-3xl' />}
+            text={'POSTMAN'}
+            percentage={'95%'}
+          />
+        </div>
+      </div>
     </div>
   )
 }

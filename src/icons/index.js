@@ -1,7 +1,9 @@
 export {
     AiFillHome,
     AiOutlineUser,
-    AiOutlineBgColors
+    AiOutlineBgColors,
+    AiFillHtml5,
+    AiFillGithub    
 }
 from 'react-icons/ai'
 export {
@@ -10,9 +12,25 @@ export {
 }
 from 'react-icons/md'
 export {
-    FaRegHandshake
-} from 'react-icons/fa'
+    FaRegHandshake,
+    FaReact,
+    FaNodeJs,
+    FaCss3,
+    FaFigma,
+    FaBootstrap
+}
+from 'react-icons/fa'
 export {
     BiArrowBack,
     BiSun
-} from 'react-icons/bi'
+}
+from 'react-icons/bi'
+export {
+    SiExpress,
+    SiMongodb,
+    SiRedux,
+    SiJavascript,
+    SiTailwindcss,
+    SiPostman
+}
+from 'react-icons/si'
