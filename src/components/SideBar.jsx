@@ -20,7 +20,9 @@ function SideBar ({ open, setOpen }) {
       exit={{ x: '100%' }}
       transition={{ delay: 0.8 }}
       className={` ${
-        !open ? 'hidden' : 'fixed top-0 left-0 md:w-[219px] md:max-w-full w-[63%]'
+        !open
+          ? 'hidden'
+          : 'fixed top-0 left-0 md:w-[219px] md:max-w-full w-[63%]'
       }  md:block  h-screen py-1 md:py-[2.8rem] px-[1.1rem] md:px-[.5rem] md:pl-2.5 bg-lightSideBar dark:bg-sidebarColor z-50`}
     >
       <p
@@ -58,10 +60,8 @@ function SideBar ({ open, setOpen }) {
           name='About'
           select={selectTag}
           setSelect={setSelect}
-          setOpen = { setOpen }
-
+          setOpen={setOpen}
         />
-
         <Navs
           icon={
             <FaRegHandshake className='text-black/70 dark:text-white/70 text-md ' />
@@ -69,8 +69,7 @@ function SideBar ({ open, setOpen }) {
           name='Service'
           select={selectTag}
           setSelect={setSelect}
-          setOpen = { setOpen }
-
+          setOpen={setOpen}
         />
         <Navs
           icon={
@@ -79,8 +78,17 @@ function SideBar ({ open, setOpen }) {
           name='PortFolio'
           select={selectTag}
           setSelect={setSelect}
-          setOpen = { setOpen }
-
+          setOpen={setOpen}
+        />
+        
+        <Navs
+          icon={
+            <MdOutlineWork className='text-black/70 dark:text-white/70 text-md ' />
+          }
+          name='Contact'
+          select={selectTag}
+          setSelect={setSelect}
+          setOpen={setOpen}
         />
       </div>
     </motion.div>
