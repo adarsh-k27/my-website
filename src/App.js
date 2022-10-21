@@ -13,30 +13,26 @@ function App() {
       < div className = {
         `App ${mode}`
       } >
+        {/* color picker and theme color change buttons  */}
         <div className='relative flex flex-col gap-3'>
           <div div className = {
             `absolute top-3 z-50 ${show ? "-right-[6rem]":"-right-[9rem]"}`
           } >
             <ColorPicker setShow={setShow} show={show} />
-          </div>{" "}
+          </div>
           < div className="absolute z-50 top-14 right-[3.5rem]" >
             <MoodChanger setMode={setMode} mode={mode} />{" "}
-          </div>{" "}
-        </div>{" "}
-        <div className='w-screen h:auto md:h-auto dark:bg-darkBgColor bg-lightBgColor'>
-          < div className='w-full h-full grid grid-cols-[20%,80%] gap-2'>
-            {" "}
-            {/* Sidebar */}{" "}
-            <SideBar open={openNavSmallDevice} setOpen={setOpen} />{" "}
-            {/* <LandingPage open={openNavSmallDevice} setOpen={setOpen} />{" "} */}
-            
-              {/* < AboutPage /> */}
-              {/* <ServicePage /> */}
-              {/* <ContactPage /> */}
-            <PageDecider open={openNavSmallDevice} setOpen={setOpen} />
-          </div>{" "}
-        </div>{" "}
-      </div>{" "}
+          </div>
+        </div>
+        {/* end Color Change Button */}
+
+        {/* start Whole Web Section Here */}
+        < div className = 'w-screen h:screen md:h-screen grid grid-cols-[20%,80%] gap-2 dark:bg-darkBgColor bg-lightBgColor' >
+          <SideBar open={openNavSmallDevice} setOpen={setOpen} />{" "}
+          <PageDecider open={openNavSmallDevice} setOpen={setOpen} />
+        </div>
+        {/* End Whole Web Section Here */}
+      </div>
     </AnimatePresence>
   );
 }
