@@ -3,6 +3,7 @@ import { ColorPicker, MoodChanger, PageDecider, SideBar } from "./components";
 import { LandingPage,AboutPage, ServicePage, ContactPage } from "./pages";
 import { AnimatePresence } from "framer-motion";
 import Portfolio_Context from "./context";
+import { AiOutlineMenu } from "react-icons/ai";
 
 function App() {
   const [openNavSmallDevice, setOpen] = useState(false);
@@ -13,6 +14,25 @@ function App() {
       < div className = {
         `App ${mode}`
       } >
+        {/* Menu section small device setUp */}
+        <div className="bg-lightBgColor dark:bg-darkBgColor fixed flex justify-between w-screen h-10">
+          < AiOutlineMenu
+          className = 'text-gray-700 text-lg'
+          onClick = {
+            () => {
+              setOpen(true)
+            }
+          }
+          />
+          <p className='text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]'>
+          <span
+            className={`text-${color_change} font-thin text-xl font-[Oswald]`}
+          >
+            A
+          </span>
+          darsh
+        </p>
+        </div>
         {/* color picker and theme color change buttons  */}
         <div className='relative flex flex-col gap-3'>
           <div div className = {

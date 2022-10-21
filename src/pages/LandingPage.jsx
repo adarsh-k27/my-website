@@ -15,20 +15,8 @@ function LandingPage ({ setOpen, open }) {
     transition={{delay:0.3}}
     className='scroller p-1 md:p-4 w-screen md:w-full '>
       <div className='w-full md:hidden flex flex-row justify-between gap-1'>
-        <AiOutlineMenu
-          className='text-gray-700 text-md'
-          onClick={() => {
-            setOpen(true)
-          }}
-        />
-        <p className='text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]'>
-          <span
-            className={`text-${color_change} font-thin text-xl font-[Oswald]`}
-          >
-            A
-          </span>
-          darsh
-        </p>
+        
+        
       </div>
       <div
         className={`px-[.5rem] md:px-3 py-1 md:py-0 text-${color_change} w-full h-full grid grid-cols-1 md:grid-cols-[70%,30%]`}
@@ -93,7 +81,7 @@ function LandingPage ({ setOpen, open }) {
           transition={{
             duration: 0.8
           }}
-          className='w-full max-w-[210px] h-full flex items-center justify-center ml-7 mt-5'
+          className='hidden w-full max-w-[210px] h-full md:flex items-center justify-center ml-7 mt-5'
         >
           <img
             src={profile}
