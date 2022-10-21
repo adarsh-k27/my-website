@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import Portfolio_Context from '../context'
 
 function Navs ({ icon, name, select, setSelect }) {
-  const { color_change } = useContext(Portfolio_Context)
+  const { color_change,setNavigation } = useContext(Portfolio_Context)
   return (
     <div
       className='w-full py-[.5rem] flex gap-5 items-center cursor-pointer group'
@@ -10,6 +10,7 @@ function Navs ({ icon, name, select, setSelect }) {
       onClick={e => {
         e.preventDefault()
         if (select !== name) {
+          setNavigation(name)
           setSelect(name)
         }
       }}

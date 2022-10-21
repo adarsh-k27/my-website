@@ -8,7 +8,12 @@ import { motion } from 'framer-motion'
 function LandingPage ({ setOpen, open }) {
   const { color_change } = useContext(Portfolio_Context)
   return (
-    <div className='p-1 md:p-4 w-screen md:w-full '>
+    <motion.div 
+    initial={{x:200,opacity:0}}
+    animate={{x:0,opacity:1}}
+    exit={{x:0,opacity:0}}
+    transition={{delay:0.3}}
+    className='p-1 md:p-4 w-screen md:w-full '>
       <div className='w-full md:hidden flex flex-row justify-between gap-1'>
         <AiOutlineMenu
           className='text-gray-700 text-md'
@@ -98,7 +103,7 @@ function LandingPage ({ setOpen, open }) {
           />
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

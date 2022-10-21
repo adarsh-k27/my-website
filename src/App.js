@@ -1,5 +1,5 @@
 import { useState, useContext } from "react";
-import { ColorPicker, MoodChanger, SideBar } from "./components";
+import { ColorPicker, MoodChanger, PageDecider, SideBar } from "./components";
 import { LandingPage,AboutPage, ServicePage, ContactPage } from "./pages";
 import { AnimatePresence } from "framer-motion";
 import Portfolio_Context from "./context";
@@ -32,8 +32,8 @@ function App() {
             
               {/* < AboutPage /> */}
               {/* <ServicePage /> */}
-              <ContactPage />
-            
+              {/* <ContactPage /> */}
+            <PageDecider open={openNavSmallDevice} setOpen={setOpen} />
           </div>{" "}
         </div>{" "}
       </div>{" "}

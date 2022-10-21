@@ -3,13 +3,16 @@ import PortfolioContext from '../context'
 function Context_Provider ({ children }) {
   const [color_change, setColor_Change] = useState('red-500')
   const [mode, setMode] = useState('dark')
+  const [navigation,setNavigation]=useState("Home")
   return (
     <PortfolioContext.Provider
       value={{
         color_change,
         setColor_Change,
         mode,
-        setMode
+        setMode,
+        navigation,
+        setNavigation
       }}
     >
       {children}

@@ -15,10 +15,17 @@ import {
   SiTailwindcss,
   AiFillGithub
 } from '../icons'
+import { motion } from 'framer-motion'
 function AboutPage () {
   const { color_change } = useContext(Portfolio_Context)
   return (
-    <div className='w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-2'>
+    <motion.div
+      initial={{ x: 200, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: 0, opacity: 0 }}
+      transition={{ delay: 0.3 }}
+      className='w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-2'
+    >
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
         <div className=''>
@@ -126,7 +133,7 @@ function AboutPage () {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
