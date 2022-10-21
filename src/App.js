@@ -33,6 +33,7 @@ function App() {
           darsh
         </p>
         </div>
+        {/* end small devce NavBar */}
         {/* color picker and theme color change buttons  */}
         <div className='relative flex flex-col gap-3'>
           <div div className = {

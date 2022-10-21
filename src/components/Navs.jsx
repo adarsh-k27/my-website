@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Portfolio_Context from '../context'
 
-function Navs ({ icon, name, select, setSelect }) {
+function Navs ({ icon, name, select, setSelect,setOpen }) {
   const { color_change,setNavigation } = useContext(Portfolio_Context)
   return (
     <div
@@ -13,6 +13,7 @@ function Navs ({ icon, name, select, setSelect }) {
           setNavigation(name)
           setSelect(name)
         }
+        setOpen(false)
       }}
     >
       <p>{icon}</p>

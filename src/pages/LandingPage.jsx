@@ -8,16 +8,13 @@ import { motion } from 'framer-motion'
 function LandingPage ({ setOpen, open }) {
   const { color_change } = useContext(Portfolio_Context)
   return (
-    <motion.div 
-    initial={{x:200,opacity:0}}
-    animate={{x:0,opacity:1}}
-    exit={{x:0,opacity:0}}
-    transition={{delay:0.3}}
-    className='scroller p-1 md:p-4 w-screen md:w-full '>
-      <div className='w-full md:hidden flex flex-row justify-between gap-1'>
-        
-        
-      </div>
+    <motion.div
+      initial={{ x: 200, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: 0, opacity: 0 }}
+      transition={{ delay: 0.3 }}
+      className='scroller p-1 md:p-4 w-screen md:w-full md:max-w-full '
+    >
       <div
         className={`px-[.5rem] md:px-3 py-1 md:py-0 text-${color_change} w-full h-full grid grid-cols-1 md:grid-cols-[70%,30%]`}
       >
