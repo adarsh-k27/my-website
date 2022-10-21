@@ -20,7 +20,7 @@ function LandingPage ({ setOpen, open }) {
       >
         {/* Name writing section  */}
         <div className='w-full md:max-w-[600px] h-auto flex flex-col items-center justify-center gap-5'>
-          <div className='w-full flex flex-wrap justify-center items-center'>
+          <div className='w-full flex flex-wrap justify-center items-center mt-4 md:mt-0'>
             <p className='dark:text-white/80 text-black/80 font-normal tracking-wide font-[oswald] text-xl md:text-2xl'>
               Hello , my name is{' '}
               <span className={`Display text-${color_change}`}>Adarsh k</span>{' '}
@@ -63,7 +63,7 @@ function LandingPage ({ setOpen, open }) {
             />
           </div>
 
-          <div className='w-full flex flex-wrap justify-center items-center mt-14'>
+          <div className='w-full flex flex-wrap justify-center items-center mt-5 md:mt-14'>
             <p className='text-gray-500 dark:text-gray-400  font-normal tracking-widest font-[oswald] text-sm'>
               im a extensive developer with self learning.{' '}
               <span className='font-[oswald] tracking-widest'>

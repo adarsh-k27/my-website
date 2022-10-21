@@ -21,7 +21,7 @@ function SideBar ({ open, setOpen }) {
       transition={{ delay: 0.8 }}
       className={` ${
         !open ? 'hidden' : 'fixed top-0 left-0 md:w-[219px] md:max-w-full w-[63%]'
-      }  md:block  h-screen py-1 md:py-[2.8rem] px-[1.1rem] md:px-[.5rem] md:pl-2.5 bg-lightSideBar dark:bg-sidebarColor`}
+      }  md:block  h-screen py-1 md:py-[2.8rem] px-[1.1rem] md:px-[.5rem] md:pl-2.5 bg-lightSideBar dark:bg-sidebarColor z-50`}
     >
       <p
         className={`relative hidden md:block text-md md:text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/60 w-auto ml-[.8rem] before:block before:absolute before:w-6 before:h-6 before:border-l-2 before:border-t-2 before:-top-1 before:-left-4 before:border-red-500 after:block after:absolute after:w-6 after:h-7 after:border-b-2 after:border-r-2 after:border-red-500 after:left-[3.4rem] after:-bottom-1`}
