@@ -15,7 +15,7 @@ function App() {
         `App ${mode}`
       } >
         {/* Menu section small device setUp */}
-        <div className="bg-lightBgColor dark:bg-darkBgColor fixed flex justify-between w-screen h-10">
+        <div className="bg-lightBgColor dark:bg-darkBgColor fixed flex justify-between w-screen h-6">
           < AiOutlineMenu
           className = 'text-gray-700 text-lg'
           onClick = {

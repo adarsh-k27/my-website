@@ -28,7 +28,7 @@ function AboutPage () {
     >
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
-        <div className=''>
+        <div className='mt-2 md:mt-0'>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >
@@ -66,71 +66,76 @@ function AboutPage () {
       </div>
       {/* Skill section */}
       <div className='w-full h-auto px-[.5rem] md:px-0'>
-        <h1 className='text-md  md:text-lg font-[oswald] md:ml-9 text-black/80 dark:text-white/80 tracking-wider'>
-          Skills
-        </h1>
-        <div className='w-auto h-full flex flex-wrap gap-2 mt-3 md:mt-5 items-center md:items-start justify-center md:justify-items-start'>
-          <Skill
-            icon={<FaReact className='text-red-500 text-3xl' />}
-            text={'REACT'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<FaNodeJs className='text-green-500 text-3xl' />}
-            text={'NODE'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<SiMongodb className='text-green-400 text-3xl' />}
-            text={'MONGODB'}
-            percentage={'90%'}
-          />
-          <Skill
-            icon={<SiExpress className='text-black/50 text-3xl' />}
-            text={'Express'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<SiRedux className='text-violet-500 text-3xl' />}
-            text={'REDUX'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<AiFillHtml5 className='text-red-500 text-3xl' />}
-            text={'HTML&CSS'}
-            percentage={'100%'}
-          />
-          <Skill
-            icon={<SiJavascript className='text-yellow-300 text-3xl' />}
-            text={'JS'}
-            percentage={'98%'}
-          />
-          <Skill
-            icon={<SiTailwindcss className='text-sky-400 text-3xl' />}
-            text={'TAILWIND'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<FaBootstrap className='text-violet-400 text-3xl' />}
-            text={'BOOTSTRAP'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<AiFillGithub className='text-black text-3xl' />}
-            text={'GIT'}
-            percentage={'95%'}
-          />
-          <Skill
-            icon={<FaFigma className='text-sky-600 text-3xl' />}
-            text={'FIGMA'}
-            percentage={'95%'}
-          />
+        <div className='w-full flex flex-col gap-4 justify-center items-center'>
+          <h1 className=' mt-3 md:mt-0w-full max-w-[5rem] text-md  md:text-lg font-[oswald] md:ml-9 text-black/80 dark:text-white/80 tracking-wider'>
+            My Skills
+          </h1>
 
-          <Skill
-            icon={<SiPostman className='text-black dark:text-white text-3xl' />}
-            text={'POSTMAN'}
-            percentage={'95%'}
-          />
+          <div className='w-auto h-full flex flex-wrap gap-2 mt-3 md:mt-5 items-center md:items-start justify-center md:justify-items-start'>
+            <Skill
+              icon={<FaReact className='text-red-500 text-3xl' />}
+              text={'REACT'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<FaNodeJs className='text-green-500 text-3xl' />}
+              text={'NODE'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<SiMongodb className='text-green-400 text-3xl' />}
+              text={'MONGODB'}
+              percentage={'90%'}
+            />
+            <Skill
+              icon={<SiExpress className='text-black/50 text-3xl' />}
+              text={'Express'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<SiRedux className='text-violet-500 text-3xl' />}
+              text={'REDUX'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<AiFillHtml5 className='text-red-500 text-3xl' />}
+              text={'HTML&CSS'}
+              percentage={'100%'}
+            />
+            <Skill
+              icon={<SiJavascript className='text-yellow-300 text-3xl' />}
+              text={'JS'}
+              percentage={'98%'}
+            />
+            <Skill
+              icon={<SiTailwindcss className='text-sky-400 text-3xl' />}
+              text={'TAILWIND'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<FaBootstrap className='text-violet-400 text-3xl' />}
+              text={'BOOTSTRAP'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<AiFillGithub className='text-black text-3xl' />}
+              text={'GIT'}
+              percentage={'95%'}
+            />
+            <Skill
+              icon={<FaFigma className='text-sky-600 text-3xl' />}
+              text={'FIGMA'}
+              percentage={'95%'}
+            />
+
+            <Skill
+              icon={
+                <SiPostman className='text-black dark:text-white text-3xl' />
+              }
+              text={'POSTMAN'}
+              percentage={'95%'}
+            />
+          </div>
         </div>
       </div>
     </motion.div>
