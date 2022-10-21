@@ -19,10 +19,12 @@
 body,
 html {
     overflow-x: hidden;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
-
+.scroller{
+    overflow-y: scroll;
+}
 ::-webkit-scrollbar {
     display: none;
 }

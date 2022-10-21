@@ -13,7 +13,7 @@ function ServicePage () {
     animate={{x:0,opacity:1}}
     exit={{x:0,opacity:0}}
     transition={{delay:0.3}}
-    className=' relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-2 mt-10'>
+    className='scroller relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-2 mt-10'>
       {/* phone view */}
 
       <div className='px-[.5rem] md:px-2 flex flex-col gap-8'>

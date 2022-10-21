@@ -12,7 +12,7 @@ function ContactPage () {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: 100, opacity: 0 }}
       transition={{ delay: 0.3 }}
-      className='relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[40%,60%] items-center justify-center px:1 md:px-2 gap-5 md:gap-0 px-1 '
+      className='scroller relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[40%,60%] items-center justify-center px:1 md:px-2 gap-5 md:gap-0 px-1 '
     >
       <div className='px-[.5rem] md:px-2 flex flex-col gap-6'>
         <div className='md:-mt-10 '>

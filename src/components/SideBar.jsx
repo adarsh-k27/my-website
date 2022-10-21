@@ -20,7 +20,7 @@ function SideBar ({ open, setOpen }) {
       exit={{ x: '100%' }}
       transition={{ delay: 0.8 }}
       className={` ${
-        !open ? 'hidden' : 'absolute top-0 left-0 md:w-[219px] w-[63%]'
+        !open ? 'hidden' : 'fixed top-0 left-0 md:w-[219px] w-[63%]'
       }  md:block  h-screen py-1 md:py-2 px-[1.1rem] md:px-[.5rem] md:pl-2.5 bg-lightSideBar dark:bg-sidebarColor`}
     >
       <p
