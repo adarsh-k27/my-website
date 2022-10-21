@@ -21,13 +21,16 @@ function AboutPage () {
     <div className='w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-2'>
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
-        <h1
-          className={`w-full text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
-        >
-          About Me
-        </h1>
-        <div className={`w-[3rem] h-[2px] bg-${color_change}`}></div>
-        <div className={`w-[2rem] h-[1px] bg-${color_change} mt-1`}></div>
+        <div className=''>
+          <h1
+            className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
+          >
+            About Me
+          </h1>
+          <div className={`w-[3rem] h-[2px] bg-${color_change}`}></div>
+          <div className={`w-[2rem] h-[1px] bg-${color_change} mt-1`}></div>
+        </div>
+
         {/* About Me */}
         <div className='h-auto flex flex-col gap-6 mt-4 md:mt-8'>
           <h3 className='text-black/80 dark:text-white/80 font-bold text-md md:text-lg tracking-wider'>

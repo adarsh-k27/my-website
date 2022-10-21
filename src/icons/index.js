@@ -3,12 +3,21 @@ export {
     AiOutlineUser,
     AiOutlineBgColors,
     AiFillHtml5,
-    AiFillGithub    
+    AiFillGithub,
+    AiOutlineMail
 }
 from 'react-icons/ai'
 export {
+    FcDataConfiguration,
+    FcMultipleDevices,
+    FcDebian
+}
+from 'react-icons/fc'
+export {
     MdOutlineWork,
-    MdModeNight
+    MdModeNight,
+    MdDeveloperMode,
+    MdLocationOn
 }
 from 'react-icons/md'
 export {
@@ -17,7 +26,9 @@ export {
     FaNodeJs,
     FaCss3,
     FaFigma,
-    FaBootstrap
+    FaBootstrap,
+    FaPhoneAlt
+
 }
 from 'react-icons/fa'
 export {

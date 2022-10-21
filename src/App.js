@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 import { ColorPicker, MoodChanger, SideBar } from "./components";
-import { LandingPage,AboutPage } from "./pages";
+import { LandingPage,AboutPage, ServicePage, ContactPage } from "./pages";
 import { AnimatePresence } from "framer-motion";
 import Portfolio_Context from "./context";
 
@@ -30,7 +30,9 @@ function App() {
             <SideBar open={openNavSmallDevice} setOpen={setOpen} />{" "}
             {/* <LandingPage open={openNavSmallDevice} setOpen={setOpen} />{" "} */}
             
-              < AboutPage />
+              {/* < AboutPage /> */}
+              {/* <ServicePage /> */}
+              <ContactPage />
             
           </div>{" "}
         </div>{" "}
