@@ -15,7 +15,7 @@ function App() {
       } >
         <div className='relative flex flex-col gap-3'>
           <div div className = {
-            `absolute top-3 ${show ? "-right-[6rem]":"-right-[9rem]"}`
+            `absolute top-3 z-50 ${show ? "-right-[6rem]":"-right-[9rem]"}`
           } >
             <ColorPicker setShow={setShow} show={show} />
           </div>{" "}
