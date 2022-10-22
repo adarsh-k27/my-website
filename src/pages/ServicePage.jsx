@@ -13,11 +13,11 @@ function ServicePage () {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: 0, opacity: 0 }}
       transition={{ delay: 0.3 }}
-      className='scroller relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-[2.6rem] mt-10 '
+      className='scroller relative w-screen md:w-full  md:h-auto grid grid-cols-1 md:grid-cols-[60%,40%] gap-4 md:gap-0 py-[1.3rem] md:py-[2.6rem] mt-10'
     >
       {/* phone view */}
 
-      <div className='px-[.5rem] md:px-2 flex flex-col gap-8'>
+      <div className='w-full h-full px-[.5rem] md:px-2 flex flex-col gap-8 '>
         <div className='-mt-10'>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
@@ -33,11 +33,11 @@ function ServicePage () {
             MyServices.map(service => <ServiceView data={service} />)}
         </div>
         {/* large view */}
-        <div className='hidden md:block'>
+        <div className='relative after:block after:absolute after:w-1 after:h-[50%] after:right-0 after:top-[20%] after:bg-black/60 after:dark:bg-white/70 hidden md:block py-1'>
           <ServiceView data={MyServices && MyServices[View]} />
         </div>
       </div>
-      <div className='hidden md:flex flex-wrap gap-4 w-full h-[80%] items-center justify-center before:block before:absolute before:w-1 before:h-[50%] before:left-[32.8rem] before:bg-red-600'>
+      <div className='hidden md:flex flex-wrap gap-4 w-full h-[80%] items-center justify-center '>
         {MyServices &&
           MyServices.map((service, index) => (
             <ShortService
