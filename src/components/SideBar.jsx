@@ -9,8 +9,8 @@ import {
   MdOutlineWork
 } from '../icons'
 import Portfolio_Context from '../context'
-function SideBar ({ open, setOpen }) {
-  const [selectTag, setSelect] = useState('Home')
+function SideBar ({ open, setOpen,setSelect,selectTag }) {
+
   const { color_change } = useContext(Portfolio_Context)
   //sm:absolute sm:top-0 sm:left-0  md:block sm:w-[75%]
   return (

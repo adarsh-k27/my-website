@@ -3,31 +3,65 @@ import { FaPhoneAlt, AiOutlineMail, MdLocationOn } from '../icons'
 import { IconBox, ReactButton, TextArea, TextField } from '../components'
 import Portfolio_Context from '../context'
 import { motion } from 'framer-motion'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
 import emailJs from 'emailjs-com'
 function ContactPage () {
   const { color_change } = useContext(Portfolio_Context)
-  const [nameSend,setName]=useState("")
-  const [emailSend,setEmail]=useState("")
-  const [message,setMessage]=useState("")
+  const [nameSend, setName] = useState('')
+  const [emailSend, setEmail] = useState('')
+  const [message, setMessage] = useState('')
 
-  const SendMail = (e) => {
+  const SendMail = e => {
     e.preventDefault()
-    console.log('sended mail',{nameSend,emailSend,message})
+    if(message==false || nameSend==false || emailSend==false){
+      console.log("error");
+      return toast.warning("All Field Must Be Fill",{
+        position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            newestOnTop: false,
+            draggable: true,
+            pauseOnHover: false,
+            theme: 'colored',
+            
+      })
+    }
     emailJs
       .send(
         'service_rzhyftd',
         'template_tx6cbjt',
         {
-          name:nameSend,
-          email:emailSend,
+          name: nameSend,
+          email: emailSend,
           message
         },
         'xVQ5Px7lJzvPib_gV'
       )
       .then(res => {
-        console.log(res)
+        if (res.status == 200) {
+          toast.success('Message  Send SuccesFully', {
+            position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            newestOnTop: false,
+            draggable: true,
+            pauseOnHover: false,
+            theme: 'colored'
+          })
+        }
       })
       .catch(error => {
+        toast.error("Message Not Send",{
+          position: 'top-right',
+            autoClose: 5000,
+            hideProgressBar: false,
+            newestOnTop: false,
+            draggable: true,
+            pauseOnHover: false,
+            theme: 'colored'
+        })
         console.log(error)
       })
   }
@@ -63,8 +97,13 @@ function ContactPage () {
       </div>
       <div className='px-[.5rem] md:px-2 flex flex-col gap-6 md:pl-2'>
         <TextField label={'Your Name'} type={'text'} state={setName} />
-        <TextField label={'Your Email'} type={'email'}  state={setEmail} />
-        <TextArea label={'Message'} type={'text'} rows={'8'}  state={setMessage} />
+        <TextField label={'Your Email'} type={'email'} state={setEmail} />
+        <TextArea
+          label={'Message'}
+          type={'text'}
+          rows={'8'}
+          state={setMessage}
+        />
         <ReactButton
           text='Send Me'
           bg={`bg-${color_change && color_change}`}
@@ -73,6 +112,7 @@ function ContactPage () {
           onClickFn={SendMail}
         />
       </div>
+      <ToastContainer />
     </motion.div>
   )
 }

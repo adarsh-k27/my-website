@@ -5,8 +5,12 @@ import { ReactButton } from '../components'
 import profile from '../assets/portfolio-profile.jpg'
 import Portfolio_Context from '../context'
 import { motion } from 'framer-motion'
-function LandingPage ({ setOpen, open }) {
-  const { color_change } = useContext(Portfolio_Context)
+function LandingPage ({ setOpen, open,setSelect,selectTag }) {
+  const { color_change,setNavigation } = useContext(Portfolio_Context)
+  const NavigateAbout=()=>{
+    setNavigation("About")
+    setSelect("About")
+  }
   return (
     <motion.div
       initial={{ x: 200, opacity: 0 }}
@@ -60,6 +64,7 @@ function LandingPage ({ setOpen, open }) {
               bg='bg-white/60 dark:bg-darkBgColor'
               hover='hover:dark:bg-blue-500 hover:bg-blue-500'
               txt='text-blue-500'
+              onClickFn={NavigateAbout}
             />
           </div>
 

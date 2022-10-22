@@ -9,6 +9,7 @@ function App() {
   const [openNavSmallDevice, setOpen] = useState(false);
   const { mode, color_change, setMode } = useContext(Portfolio_Context);
   const [show,setShow]=useState(false)
+  const [selectTag,setSelect]=useState("Home")
   return (
     <AnimatePresence>
       < div className = {
@@ -42,15 +43,15 @@ function App() {
             <ColorPicker setShow={setShow} show={show} />
           </div>
           < div className="absolute z-50 top-14 right-[3.5rem]" >
-            <MoodChanger setMode={setMode} mode={mode} />{" "}
+            <MoodChanger setMode={setMode} mode={mode} setSelect={setSelect} />{" "}
           </div>
         </div>
         {/* end Color Change Button */}
 
         {/* start Whole Web Section Here */}
         < div className = 'w-screen h:screen md:h-screen grid grid-cols-[20%,80%] gap-2 dark:bg-darkBgColor bg-lightBgColor' >
-          <SideBar open={openNavSmallDevice} setOpen={setOpen} />{" "}
-          <PageDecider open={openNavSmallDevice} setOpen={setOpen} />
+          <SideBar open={openNavSmallDevice} setOpen={setOpen} setSelect={setSelect} selectTag={selectTag} />{" "}
+          <PageDecider open={openNavSmallDevice} setOpen={setOpen} setSelect={setSelect}/>
         </div>
         {/* End Whole Web Section Here */}
       </div>
