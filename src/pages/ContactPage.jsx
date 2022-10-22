@@ -1,11 +1,36 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import { FaPhoneAlt, AiOutlineMail, MdLocationOn } from '../icons'
 import { IconBox, ReactButton, TextArea, TextField } from '../components'
 import Portfolio_Context from '../context'
 import { motion } from 'framer-motion'
+import emailJs from 'emailjs-com'
 function ContactPage () {
   const { color_change } = useContext(Portfolio_Context)
-  console.log('ccc', color_change)
+  const [nameSend,setName]=useState("")
+  const [emailSend,setEmail]=useState("")
+  const [message,setMessage]=useState("")
+
+  const SendMail = (e) => {
+    e.preventDefault()
+    console.log('sended mail',{nameSend,emailSend,message})
+    emailJs
+      .send(
+        'service_rzhyftd',
+        'template_tx6cbjt',
+        {
+          name:nameSend,
+          email:emailSend,
+          message
+        },
+        'xVQ5Px7lJzvPib_gV'
+      )
+      .then(res => {
+        console.log(res)
+      })
+      .catch(error => {
+        console.log(error)
+      })
+  }
   return (
     <motion.div
       initial={{ x: 200, opacity: 0 }}
@@ -37,14 +62,15 @@ function ContactPage () {
         </div>
       </div>
       <div className='px-[.5rem] md:px-2 flex flex-col gap-6 md:pl-2'>
-        <TextField label={'Your Name'} type={'text'} />
-        <TextField label={'Your Email'} type={'email'} />
-        <TextArea label={'Message'} type={'text'} rows={'8'} />
+        <TextField label={'Your Name'} type={'text'} state={setName} />
+        <TextField label={'Your Email'} type={'email'}  state={setEmail} />
+        <TextArea label={'Message'} type={'text'} rows={'8'}  state={setMessage} />
         <ReactButton
           text='Send Me'
           bg={`bg-${color_change && color_change}`}
           hover='hover:dark:bg-white/80 hover:bg-black/80'
-          txt='text-white/70 dark:group-hover:text-black/80 group-hover:text-white/80'
+          txt='text-white/80 dark:group-hover:text-black/80 group-hover:text-white/80'
+          onClickFn={SendMail}
         />
       </div>
     </motion.div>

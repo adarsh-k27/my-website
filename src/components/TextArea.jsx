@@ -1,7 +1,6 @@
 import React from 'react'
 
 function TextArea (props) {
-  console.log('props', props)
   return (
     <div className='flex flex-col gap-4 '>
       <label
@@ -14,6 +13,10 @@ function TextArea (props) {
         type={props.type}
         className='w-full h-[6rem] bg-lightSideBar dark:bg-white/10 resize-none text-black dark:text-white'
         {...props}
+        onChange={(e)=>{
+          e.preventDefault()
+          props.state(e.target.value)
+        }}
       ></textarea>
     </div>
   )

@@ -53,7 +53,7 @@ function LandingPage ({ setOpen, open }) {
               text='Resume'
               bg={`bg-${color_change && color_change}`}
               hover='hover:dark:bg-white hover:bg-black/80'
-              txt='text-white/70 dark:group-hover:text-black/80 group-hover:text-white/80'
+              txt='text-white/80 dark:group-hover:text-black/80 group-hover:text-white/80'
             />
             <ReactButton
               text='More About'

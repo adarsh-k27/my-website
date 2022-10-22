@@ -56,7 +56,7 @@ function AboutPage () {
             text='Hire Me'
             bg={`bg-${color_change && color_change}`}
             hover='hover:dark:bg-white/80 hover:bg-black/80'
-            txt='text-white/70 dark:group-hover:text-black/80 group-hover:text-white/80'
+            txt='text-white/80 dark:group-hover:text-black/80 group-hover:text-white/80'
           />
         </div>
         <div className='w-full mt-3 md:mt-9 flex flex-row items-center justify-center gap-4'>

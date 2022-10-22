@@ -18,7 +18,7 @@ function ServicePage () {
       {/* phone view */}
 
       <div className='w-full h-full px-[.5rem] md:px-2 flex flex-col gap-8 '>
-        <div className='-mt-10'>
+        <div className='-mt-7 md:-mt-10 '>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >
@@ -28,7 +28,7 @@ function ServicePage () {
           <div className={`w-[2rem] h-[1px] bg-${color_change} mt-1`}></div>
         </div>
         {/* Mobile view */}
-        <div className='md:hidden flex flex-col gap-8 items-center justify-center'>
+        <div className='w-full h-full md:hidden flex flex-col gap-8 items-center justify-center'>
           {MyServices &&
             MyServices.map(service => <ServiceView data={service} />)}
         </div>
@@ -37,7 +37,7 @@ function ServicePage () {
           <ServiceView data={MyServices && MyServices[View]} />
         </div>
       </div>
-      <div className='hidden md:flex flex-wrap gap-4 w-full h-[80%] items-center justify-center '>
+      <div className='hidden md:flex flex-wrap gap-4 w-full  h-[80%] items-center justify-center '>
         {MyServices &&
           MyServices.map((service, index) => (
             <ShortService
