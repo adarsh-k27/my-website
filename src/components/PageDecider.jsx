@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import Portfolio_Context from '../context'
-import { AboutPage, ContactPage, LandingPage, ServicePage } from '../pages'
+import { AboutPage, ContactPage, HireMePage, LandingPage, PortFolioPage, ServicePage } from '../pages'
 
 function PageDecider ({ openNavSmallDevice, setOpen ,setSelect}) {
   const { navigation } = useContext(Portfolio_Context)
@@ -17,6 +17,12 @@ function PageDecider ({ openNavSmallDevice, setOpen ,setSelect}) {
 
     case 'Contact':
       return <ContactPage />
+
+    case 'Portfolio' :
+      return <PortFolioPage />
+
+    case 'HireMe':
+      return <HireMePage />
     default:
       return <LandingPage open={openNavSmallDevice} setOpen={setOpen} />
   }
