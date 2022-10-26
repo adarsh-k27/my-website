@@ -15,17 +15,16 @@ function ContactPage () {
 
   const SendMail = e => {
     e.preventDefault()
-    if(message==false || nameSend==false || emailSend==false){
-      console.log("error");
-      return toast.warning("All Field Must Be Fill",{
+    if (message == false || nameSend == false || emailSend == false) {
+      console.log('error')
+      return toast.warning('All Field Must Be Fill', {
         position: 'top-right',
-            autoClose: 5000,
-            hideProgressBar: false,
-            newestOnTop: false,
-            draggable: true,
-            pauseOnHover: false,
-            theme: 'colored',
-            
+        autoClose: 5000,
+        hideProgressBar: false,
+        newestOnTop: false,
+        draggable: true,
+        pauseOnHover: false,
+        theme: 'colored'
       })
     }
     emailJs
@@ -53,14 +52,14 @@ function ContactPage () {
         }
       })
       .catch(error => {
-        toast.error("Message Not Send",{
+        toast.error('Message Not Send', {
           position: 'top-right',
-            autoClose: 5000,
-            hideProgressBar: false,
-            newestOnTop: false,
-            draggable: true,
-            pauseOnHover: false,
-            theme: 'colored'
+          autoClose: 5000,
+          hideProgressBar: false,
+          newestOnTop: false,
+          draggable: true,
+          pauseOnHover: false,
+          theme: 'colored'
         })
         console.log(error)
       })
@@ -74,7 +73,7 @@ function ContactPage () {
       className='scroller relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[40%,60%] items-center justify-center px:1 md:px-2 gap-5 md:gap-0'
     >
       <div className='flex flex-col gap-6'>
-        <div className='md:-mt-10 mt-7 ml-3 md:ml-0'>
+        <div className='mt-10 md:mt-7 ml-3 md:ml-0'>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >
@@ -95,7 +94,7 @@ function ContactPage () {
           <IconBox icon={<MdLocationOn />} text={'Kannur, Kerala'} />
         </div>
       </div>
-      <div className='px-[.5rem] md:px-2 flex flex-col gap-6 md:pl-2'>
+      <div className='px-[.5rem] md:px-2 flex flex-col gap-6 md:pl-2 mt-7 md:mt-10'>
         <TextField label={'Your Name'} type={'text'} state={setName} />
         <TextField label={'Your Email'} type={'email'} state={setEmail} />
         <TextArea

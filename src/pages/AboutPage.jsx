@@ -33,7 +33,7 @@ function AboutPage () {
     >
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
-        <div className='mt-2 md:mt-0'>
+        <div className='mt-5 md:mt-0'>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >
@@ -113,7 +113,7 @@ function AboutPage () {
               text={'JS'}
               percentage={'98%'}
             />
-            
+
             <Skill
               icon={
                 <SiFirebase className='text-red-400 dark:text-white text-3xl' />
