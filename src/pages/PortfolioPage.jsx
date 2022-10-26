@@ -2,12 +2,18 @@ import React, { useContext } from 'react'
 import { Project } from '../components'
 import Portfolio_Context from '../context'
 import { Projects } from '../assets/data'
+import {motion} from 'framer-motion'
 function PortfolioPage () {
   const { color_change } = useContext(Portfolio_Context)
   console.log('ppp', Projects)
   return (
-    <div className='w-screen md:w-full  md:h-full h-screen flex flex-col gap-3 '>
-      <div className='mt-7 md:mt-8 ml-3 md:ml-0'>
+    <motion.div 
+    initial={{ x: 200, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x: 0, opacity: 0 }}
+      transition={{ delay: 0.3 }}
+    className='w-screen md:w-full  md:h-full h-screen flex flex-col gap-3 '>
+      <div className='mt-11 md:mt-8 ml-3 md:ml-0'>
         <h1
           className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
         >
@@ -22,7 +28,7 @@ function PortfolioPage () {
             return <Project data={project} />
           })}
       </div>
-    </div>
+    </motion.div>
   )
 }
 
