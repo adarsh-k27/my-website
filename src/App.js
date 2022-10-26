@@ -17,7 +17,7 @@ function App() {
         {/* Menu section small device setUp */}
         <div className="bg-lightBgColor dark:bg-darkBgColor fixed flex justify-between w-screen z-50 h-6">
           < AiOutlineMenu
-          className = 'text-gray-700 text-lg'
+          className = 'text-gray-400 text-2xl'
           onClick = {
             () => {
               setOpen(true)
