@@ -46,7 +46,7 @@ function ColorSelecter ({ setShow, show }) {
         className={`${!show &&
           'hidden'} flex flex-col gap-1 items-center justify-center`}
       >
-        <p className='text-[.7rem] font-semibold dark:text-white text-black'>
+        <p className='text-[.6rem] font-semibold dark:text-white text-black'>
           Theme Color
         </p>
         <div className='flex gap-1'>
