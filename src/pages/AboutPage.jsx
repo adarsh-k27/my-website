@@ -33,7 +33,7 @@ function AboutPage () {
     >
       {/* About Section */}
       <div className='px-[.5rem] md:px-2'>
-        <div className='mt-5 md:mt-0'>
+        <div className='mt-8 md:mt-0'>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >

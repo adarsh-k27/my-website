@@ -18,7 +18,7 @@ function ServicePage () {
       {/* phone view */}
 
       <div className='w-full h-full px-[.5rem] md:px-2 flex flex-col gap-8 '>
-        <div className='-mt-4 md:-mt-10 '>
+        <div className='-mt-2 md:-mt-10 '>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >

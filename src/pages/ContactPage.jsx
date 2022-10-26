@@ -73,7 +73,7 @@ function ContactPage () {
       className='scroller relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[40%,60%] items-center justify-center px:1 md:px-2 gap-5 md:gap-0'
     >
       <div className='flex flex-col gap-6'>
-        <div className='mt-10 md:mt-7 ml-3 md:ml-0'>
+        <div className='mt-14 md:mt-7 ml-3 md:ml-0'>
           <h1
             className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
           >

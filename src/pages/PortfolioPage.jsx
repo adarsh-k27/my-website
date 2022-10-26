@@ -14,7 +14,7 @@ function PortfolioPage () {
       transition={{ delay: 0.3 }}
       className='w-screen md:w-full  md:h-full h-screen flex flex-col gap-3 '
     >
-      <div className='mt-14 md:mt-8 ml-3 md:ml-0'>
+      <div className='mt-[3.4rem] md:mt-8 ml-3 md:ml-0'>
         <h1
           className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
         >
