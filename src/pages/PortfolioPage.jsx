@@ -6,7 +6,7 @@ function PortfolioPage () {
   const { color_change } = useContext(Portfolio_Context)
   console.log('ppp', Projects)
   return (
-    <div className='w-screen md:w-full  md:h-full flex flex-col gap-3 '>
+    <div className='w-screen md:w-full  md:h-full h-screen flex flex-col gap-3 '>
       <div className='mt-7 md:mt-8 ml-3 md:ml-0'>
         <h1
           className={`w-full  text-black/70 dark:text-white/80 text-xl md:text-xl font-[oswald] tracking-wider`}
