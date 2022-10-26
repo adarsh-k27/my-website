@@ -94,7 +94,7 @@ function AboutPage () {
               percentage={'90%'}
             />
             <Skill
-              icon={<SiExpress className='text-black/50 text-3xl' />}
+              icon={<SiExpress className='text-black/50 dark:text-white text-3xl' />}
               text={'Express'}
               percentage={'95%'}
             />
@@ -116,7 +116,7 @@ function AboutPage () {
 
             <Skill
               icon={
-                <SiFirebase className='text-red-400 dark:text-white text-3xl' />
+                <SiFirebase className='text-red-400 dark:text-red-400 text-3xl' />
               }
               text={'FIREBASE'}
               percentage={'95%'}
@@ -132,7 +132,7 @@ function AboutPage () {
               percentage={'95%'}
             />
             <Skill
-              icon={<AiFillGithub className='text-black text-3xl' />}
+              icon={<AiFillGithub className='text-black dark:text-white text-3xl' />}
               text={'GIT'}
               percentage={'95%'}
             />
