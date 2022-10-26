@@ -36,12 +36,12 @@ function SideBar ({ open, setOpen,setSelect,selectTag }) {
         darsh
       </p>
       <p
-        className='cursor-pointer'
+        className='cursor-pointer mt-5'
         onClick={() => {
           setOpen(false)
         }}
       >
-        <BiArrowBack className='block md:hidden dark:text-white/60 text-black/60 text-xl' />
+        <BiArrowBack className='block md:hidden dark:text-white/60 text-black/60 text-3xl' />
       </p>
       <div className='w-full h-full max-h-screen  flex flex-col gap-[1rem] justify-center'>
         <Navs
