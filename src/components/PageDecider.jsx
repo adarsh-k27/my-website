@@ -18,7 +18,7 @@ function PageDecider ({ openNavSmallDevice, setOpen ,setSelect}) {
     case 'Contact':
       return <ContactPage />
 
-    case 'Portfolio' :
+    case 'PortFolio' :
       return <PortFolioPage />
 
     case 'HireMe':

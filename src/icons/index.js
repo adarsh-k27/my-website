@@ -4,7 +4,8 @@ export {
     AiOutlineBgColors,
     AiFillHtml5,
     AiFillGithub,
-    AiOutlineMail
+    AiOutlineMail,
+    AiOutlineEye
 }
 from 'react-icons/ai'
 export {
@@ -45,3 +46,4 @@ export {
     SiPostman
 }
 from 'react-icons/si'
+

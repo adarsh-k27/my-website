@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-function Button ({ bg, hover, text, txt, animate,onClickFn }) {
+function Button ({ bg, hover, text, txt, animate,onClickFn,Link }) {
   const ButtonVariants = {
     hover: {
         scale:1.1,
@@ -20,7 +20,7 @@ function Button ({ bg, hover, text, txt, animate,onClickFn }) {
       className={`w-full h-full flex justify-center md:justify-start px-2 py-[.3rem] md:py-[.8rem] ${bg} ${hover} group`}
     >
       <button className={`font-semibold group-hover:text-white ${txt} `}>
-        {text}
+      { Link ? <a href={Link}>{text}</a> : <p> {text} </p> }
       </button>
     </motion.div>
   )
