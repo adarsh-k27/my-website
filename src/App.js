@@ -37,11 +37,11 @@ function App() {
         {/* color picker and theme color change buttons  */}
         <div className='relative flex flex-col gap-3'>
           <div div className = {
-            `absolute top-8 md:top-3 z-50 ${show ? "-right-[6rem]":"-right-[9rem]"}`
+            `absolute top-9 md:top-3 z-50 ${show ? "-right-[6rem]":"-right-[9rem]"}`
           } >
             <ColorPicker setShow={setShow} show={show} />
           </div>
-          < div className="absolute z-50 top-[4.5rem] md:top-14 right-[3.5rem]" >
+          < div className="absolute z-50 top-[4.7rem] md:top-14 right-[3.5rem]" >
             <MoodChanger setMode={setMode} mode={mode} setSelect={setSelect} />{" "}
           </div>
         </div>
