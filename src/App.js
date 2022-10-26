@@ -15,7 +15,9 @@ function App() {
         `App ${mode}`
       } 
       onClick={()=>{
+        console.log("jahhjhbayayu");
         if(open){
+          console.log("ooopened");
           setOpen(false)
         }
       }}
