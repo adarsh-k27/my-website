@@ -13,7 +13,13 @@ function App() {
     <AnimatePresence>
       < div className = {
         `App ${mode}`
-      } >
+      } 
+      onClick={()=>{
+        if(open){
+          setOpen(false)
+        }
+      }}
+      >
         {/* Menu section small device setUp */}
         <div className="bg-lightBgColor dark:bg-darkBgColor fixed flex justify-between w-screen z-50 h-6 top-2">
           < AiOutlineMenu
