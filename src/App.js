@@ -24,9 +24,9 @@ function App() {
             }
           }
           />
-          <p className='text-xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]'>
+          <p className='text-2xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]'>
           <span
-            className={`text-${color_change} font-thin text-xl font-[Oswald]`}
+            className={`text-${color_change} font-thin text-2xl font-[Oswald]`}
           >
             A
           </span>
@@ -37,11 +37,11 @@ function App() {
         {/* color picker and theme color change buttons  */}
         <div className='relative flex flex-col gap-3'>
           <div div className = {
-            `absolute top-9 md:top-3 z-50 ${show ? "-right-[6rem]":"-right-[9rem]"}`
+            `absolute top-10 md:top-10 z-50 ${show ? "-right-[6.3rem]":"-right-[11rem]"}`
           } >
             <ColorPicker setShow={setShow} show={show} />
           </div>
-          < div className="absolute z-50 top-[4.7rem] md:top-14 right-[3.5rem]" >
+          < div className="absolute z-50 top-[4.7rem] md:top-[4.6rem] right-[1.3rem]" >
             <MoodChanger setMode={setMode} mode={mode} setSelect={setSelect} />{" "}
           </div>
         </div>

@@ -9,7 +9,7 @@ function ColorSelecter ({ setShow, show }) {
 
   return (
     <div
-      className={`w-225 h-8 flex flex-row gap-3 cursor-pointer rounded-full `}
+      className={`w-225 h-6 flex flex-row gap-3 cursor-pointer rounded-full `}
     >
       <motion.div
         whileHover={{
