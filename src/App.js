@@ -41,7 +41,7 @@ function App() {
           } >
             <ColorPicker setShow={setShow} show={show} />
           </div>
-          < div className="absolute z-50 top-[5.4rem] md:top-[4.6rem] right-[1.3rem]" >
+          < div className="absolute z-50 top-[5.9rem] md:top-[4.6rem] right-[1.3rem]" >
             <MoodChanger setMode={setMode} mode={mode} setSelect={setSelect} />{" "}
           </div>
         </div>
