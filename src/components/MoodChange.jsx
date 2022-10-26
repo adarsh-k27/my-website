@@ -17,9 +17,9 @@ function MoodChange ({ setMode, mode }) {
       }}
     >
       {lightMode ? (
-        <MdModeNight className='text-xl text-darkBgColor dark:text-lightBgColor' />
+        <MdModeNight className='text-lg md:text-xl text-darkBgColor dark:text-lightBgColor' />
       ) : (
-        <BiSun className='text-xl text-darkBgColor dark:text-lightBgColor' />
+        <BiSun className='text-lg md:text-xl text-darkBgColor dark:text-lightBgColor' />
       )}
     </motion.div>
   )

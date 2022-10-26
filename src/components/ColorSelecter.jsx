@@ -29,7 +29,7 @@ function ColorSelecter ({ setShow, show }) {
         <AiOutlineBgColors
           className={` ${
             color_change ? `text-${color_change}` : `text-red-500`
-          } text-xl`}
+          } text-lg md:text-xl`}
         />
       </motion.div>
       <motion.div

@@ -17,7 +17,7 @@ function App() {
         {/* Menu section small device setUp */}
         <div className="bg-lightBgColor dark:bg-darkBgColor fixed flex justify-between w-screen z-50 h-6 top-2">
           < AiOutlineMenu
-          className = 'text-gray-400 text-2xl'
+          className = 'text-gray-400 text-3xl'
           onClick = {
             () => {
               setOpen(true)
@@ -35,13 +35,13 @@ function App() {
         </div>
         {/* end small devce NavBar */}
         {/* color picker and theme color change buttons  */}
-        <div className='relative flex flex-col gap-3'>
+        <div className='relative flex flex-col'>
           <div div className = {
-            `absolute top-10 md:top-10 z-50 ${show ? "-right-[6.3rem]":"-right-[11rem]"}`
+            `absolute top-14 md:top-10 z-50 ${show ? "-right-[6.3rem]":"-right-[11rem]"}`
           } >
             <ColorPicker setShow={setShow} show={show} />
           </div>
-          < div className="absolute z-50 top-[4.7rem] md:top-[4.6rem] right-[1.3rem]" >
+          < div className="absolute z-50 top-[5.4rem] md:top-[4.6rem] right-[1.3rem]" >
             <MoodChanger setMode={setMode} mode={mode} setSelect={setSelect} />{" "}
           </div>
         </div>
