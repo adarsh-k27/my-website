@@ -43,7 +43,8 @@ export {
     SiRedux,
     SiJavascript,
     SiTailwindcss,
-    SiPostman
+    SiPostman,
+    SiFirebase
 }
 from 'react-icons/si'
 

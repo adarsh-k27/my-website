@@ -13,14 +13,15 @@ import {
   SiPostman,
   SiRedux,
   SiTailwindcss,
-  AiFillGithub
+  AiFillGithub,
+  SiFirebase
 } from '../icons'
 import { motion } from 'framer-motion'
 function AboutPage () {
-  const { color_change,setNavigation } = useContext(Portfolio_Context)
-const ToHireMe=()=>{
-setNavigation('HireMe')
-}
+  const { color_change, setNavigation } = useContext(Portfolio_Context)
+  const ToHireMe = () => {
+    setNavigation('HireMe')
+  }
 
   return (
     <motion.div
@@ -112,6 +113,14 @@ setNavigation('HireMe')
               text={'JS'}
               percentage={'98%'}
             />
+            
+            <Skill
+              icon={
+                <SiFirebase className='text-red-400 dark:text-white text-3xl' />
+              }
+              text={'FIREBASE'}
+              percentage={'95%'}
+            />
             <Skill
               icon={<SiTailwindcss className='text-sky-400 text-3xl' />}
               text={'TAILWIND'}
@@ -130,14 +139,6 @@ setNavigation('HireMe')
             <Skill
               icon={<FaFigma className='text-sky-600 text-3xl' />}
               text={'FIGMA'}
-              percentage={'95%'}
-            />
-
-            <Skill
-              icon={
-                <SiPostman className='text-black dark:text-white text-3xl' />
-              }
-              text={'POSTMAN'}
               percentage={'95%'}
             />
           </div>

@@ -44,10 +44,15 @@ function ColorSelecter ({ setShow, show }) {
           }
         }}
         className={`${!show &&
-          'hidden'} flex flex-row gap-2 items-center justify-center`}
+          'hidden'} flex flex-col gap-1 items-center justify-center`}
       >
-        <Colors color={'red-500'} bg={'bg-red-500'} />
-        <Colors color={'blue-500'} bg={'bg-blue-500'} />
+        <p className='text-[.7rem] font-semibold dark:text-white text-black'>
+          Theme Color
+        </p>
+        <div className='flex gap-1'>
+          <Colors color={'red-500'} bg={'bg-red-500'} />
+          <Colors color={'blue-500'} bg={'bg-blue-500'} />
+        </div>
       </motion.div>
     </div>
   )
