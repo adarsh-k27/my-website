@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
-import { AiOutlineMenu } from 'react-icons/ai'
+import { AiFillGithub, AiFillLinkedin } from '../icons'
 import Typical from 'react-typical'
 import { ReactButton } from '../components'
 import profile from '../assets/portfolio-profile.jpg'
 import Portfolio_Context from '../context'
 import { motion } from 'framer-motion'
-function LandingPage ({ setOpen, open,setSelect,selectTag }) {
-  const { color_change,setNavigation } = useContext(Portfolio_Context)
-  const NavigateAbout=()=>{
-    setNavigation("About")
-    setSelect("About")
+function LandingPage ({ setOpen, open, setSelect, selectTag }) {
+  const { color_change, setNavigation } = useContext(Portfolio_Context)
+  const NavigateAbout = () => {
+    setNavigation('About')
+    setSelect('About')
   }
   return (
     <motion.div
@@ -58,7 +58,7 @@ function LandingPage ({ setOpen, open,setSelect,selectTag }) {
               bg={`bg-${color_change && color_change}`}
               hover='hover:dark:bg-white hover:bg-black/80'
               txt='text-white/80 dark:group-hover:text-black/80 group-hover:text-white/80'
-              Link="https://drive.google.com/file/d/1-8-OHlUdmyNZ2dpYE4wgpX4aKOw9fNCo/view?usp=sharing"
+              Link='https://drive.google.com/file/d/1-8-OHlUdmyNZ2dpYE4wgpX4aKOw9fNCo/view?usp=sharing'
             />
             <ReactButton
               text='More About'
@@ -77,6 +77,18 @@ function LandingPage ({ setOpen, open,setSelect,selectTag }) {
                 {' '}
                 Improving My Skills Through Lots of My Projects.
               </span>
+            </p>
+          </div>
+          <div className='flex gap-5 items-center justify-center'>
+            <p className='text-black dark:text-white text-lg'>
+              <a href='' target={'_blank'}>
+                <AiFillGithub />
+              </a>
+            </p>
+            <p className='text-sky-800 dark:text-sky-400 text-lg'>
+              <a href='' target={'_blank'}>
+                <AiFillLinkedin />
+              </a>
             </p>
           </div>
         </div>
