@@ -16,6 +16,7 @@ function Button ({ bg, hover, text, txt, animate, onClickFn, Link }) {
       Link ? (
       <motion.a
         href={Link}
+        target="_blank"
         variants={animate && ButtonVariants}
         whileHover={'hover'}
         className={`w-full h-full flex justify-center md:justify-start px-2 py-[.3rem] md:py-[.8rem] ${bg} ${hover} group`}

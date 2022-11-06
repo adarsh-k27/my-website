@@ -22,12 +22,15 @@ function ProjectDesc ({ data }) {
         </p>
         <div className='flex items-center justify-between w-full'>
           <p className='dark:text-white text-black text-lg md:text-2xl'>
-            <a href={data.git}>
+            <a href={data.git}
+            target="_blank">
               <AiFillGithub />
             </a>
           </p>
           <p className='text-black dark:text-white'>
-            <a href={data.view}>
+            <a href={data.view}
+            target="_blank"
+            >
               {' '}
               <AiOutlineEye className='text-lg md:text-2xl' />
             </a>

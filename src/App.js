@@ -6,7 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 function App() {
   const [openNavSmallDevice, setOpen] = useState(false);
-  const { mode, color_change, setMode } = useContext(Portfolio_Context);
+  const { mode, color_change, setMode,setNavigation } = useContext(Portfolio_Context);
   const [show,setShow]=useState(false)
   const [selectTag,setSelect]=useState("Home")
   return (
@@ -32,7 +32,11 @@ function App() {
             }
           }
           />
-          <p className='text-2xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]'>
+          <p className='text-2xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]' onClick={(e)=>{
+            e.preventDefault()
+            setNavigation('Home')
+            setSelect('Home')
+          }}>
           <span
             className={`text-${color_change} font-thin text-2xl font-[Oswald]`}
           >
