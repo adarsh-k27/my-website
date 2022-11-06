@@ -21,20 +21,37 @@ function ProjectDesc ({ data }) {
           {data?.Desc}
         </p>
         <div className='flex items-center justify-between w-full'>
-          <p className='dark:text-white text-black text-lg md:text-2xl'>
-            <a href={data.git}
-            target="_blank">
-              <AiFillGithub />
-            </a>
-          </p>
-          <p className='text-black dark:text-white'>
-            <a href={data.view}
-            target="_blank"
-            >
-              {' '}
-              <AiOutlineEye className='text-lg md:text-2xl' />
-            </a>
-          </p>
+          <div className='relative flex flex-col gap-1 items-center justify-center group'>
+            <p className='dark:text-white text-black text-lg md:text-2xl'>
+              <a href={data.git} target='_blank'>
+                <AiFillGithub />
+              </a>
+            </p>
+            <p className='hidden group-hover:block dark:text-white/70 text-black/70 text-sm text-[.7rem] absolute -bottom-4 left-0'>
+              FrontEnd
+            </p>
+          </div>
+          <div className='relative flex flex-col gap-1 items-center justify-center group'>
+            <p className='dark:text-white text-black text-lg md:text-2xl'>
+              <a href={data.git} target='_blank'>
+                <AiFillGithub />
+              </a>
+            </p>
+            <p className='hidden group-hover:block dark:text-white/70 text-black/70 text-sm text-[.7rem] absolute -bottom-4 '>
+              BackEnd
+            </p>
+          </div>
+          <div className='relative flex flex-col gap-1 items-center justify-center group '>
+            <p className='text-black dark:text-white'>
+              <a href={data.view} target='_blank'>
+                {' '}
+                <AiOutlineEye className='text-lg md:text-2xl' />
+              </a>
+            </p>
+            <p className='hidden group-hover:block dark:text-white/70 text-black/70 text-[.7rem] absolute -bottom-3'>
+              Host
+            </p>
+          </div>
         </div>
       </div>
     </div>
