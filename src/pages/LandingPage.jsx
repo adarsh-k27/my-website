@@ -58,7 +58,7 @@ function LandingPage ({ setOpen, open, setSelect, selectTag }) {
               bg={`bg-${color_change && color_change}`}
               hover='hover:dark:bg-white hover:bg-black/80'
               txt='text-white/80 dark:group-hover:text-black/80 group-hover:text-white/80'
-              Link='https://drive.google.com/file/d/1-8-OHlUdmyNZ2dpYE4wgpX4aKOw9fNCo/view?usp=sharing'
+              Link='https://drive.google.com/file/d/1-L2wQcbVmZRDpfPiU3ynYBJwGyb8Npma/view?usp=share_link'
             />
             <ReactButton
               text='More About'
@@ -81,12 +81,12 @@ function LandingPage ({ setOpen, open, setSelect, selectTag }) {
           </div>
           <div className='flex gap-5 items-center justify-center'>
             <p className='text-black dark:text-white text-lg'>
-              <a href='' target={'_blank'}>
+              <a href='https://github.com/adarsh-k27' target={'_blank'}>
                 <AiFillGithub />
               </a>
             </p>
             <p className='text-sky-800 dark:text-sky-400 text-lg'>
-              <a href='' target={'_blank'}>
+              <a href='https://www.linkedin.com/in/adarshkradhakrishnan/' target={'_blank'}>
                 <AiFillLinkedin />
               </a>
             </p>
