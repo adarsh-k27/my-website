@@ -26,7 +26,8 @@ export const Projects = [{
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666642375/food-app_ypzmes.jpg",
         Desc: "It Is An Food Delivery Web App.We Can Find Food Here and Buy It",
         git: "https://github.com/adarsh-k27/Food-Delivery-Web",
-        view: "https://food-delivery-app-web.netlify.app/"
+        view: "https://food-delivery-app-web.netlify.app/",
+        backend: "https://github.com/adarsh-k27/food-delivery-backend"
     },
     {
         Title: "Music Learning Web App ",
@@ -34,21 +35,24 @@ export const Projects = [{
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666757432/music-app_bkjncf.jpg",
         Desc: "Its An Music Learning Web App.Wecan Hear Music Here And Relax",
         git: "https://github.com/adarsh-k27/music-websi",
-        view: "https://music-learning-web-app.netlify.app/"
+        view: "https://music-learning-web-app.netlify.app/",
+        backend: "https://github.com/adarsh-k27/music-backend"
     }, {
         Title: "Happy Talky Chat App",
         Features: ["Socket.io", "React", "NodeJs"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666642365/chat-app-3_fdfywr.jpg",
         Desc: "It Is An Chatting Application.Chat With Person Who is Already Logged In ,With Typing Indicater",
         git: "https://github.com/adarsh-k27/happy-talky",
-        view: "https://happy-talky-chat-app.netlify.app/"
+        view: "https://happy-talky-chat-app.netlify.app/",
+        backend: "https://github.com/adarsh-k27/happy-talky-backend"
     }, {
         Title: "Random Chat App",
         Features: ["Socket.Io", "React", "css"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666642383/chatapp-1_v0tcqs.jpg",
         Desc: "Its An Random Chatting Application.We can select Person in It For Chatting",
         git: "https://github.com/adarsh-k27/simple-responsive-react-chat-app",
-        view: "https://dazzling-lolly-08748c.netlify.app/"
+        view: "https://dazzling-lolly-08748c.netlify.app/",
+        backend: "https://github.com/adarsh-k27/react-chat-backend"
     },
     {
         Title: "Responsive Company web",

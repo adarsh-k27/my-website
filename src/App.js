@@ -32,7 +32,7 @@ function App() {
             }
           }
           />
-          <p className='text-2xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem]' onClick={(e)=>{
+          <p className='text-2xl font-[Dancing Script] font-extralight dark:text-white/50 text-black/50  w-auto ml-[.8rem] cursor-pointer' onClick={(e)=>{
             e.preventDefault()
             setNavigation('Home')
             setSelect('Home')

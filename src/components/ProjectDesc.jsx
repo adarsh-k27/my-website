@@ -31,9 +31,10 @@ function ProjectDesc ({ data }) {
               FrontEnd
             </p>
           </div>
-          <div className='relative flex flex-col gap-1 items-center justify-center group'>
+          {
+            data.backend && <div className='relative flex flex-col gap-1 items-center justify-center group'>
             <p className='dark:text-white text-black text-lg md:text-2xl'>
-              <a href={data.git} target='_blank'>
+              <a href={data.backend} target='_blank'>
                 <AiFillGithub />
               </a>
             </p>
@@ -41,6 +42,7 @@ function ProjectDesc ({ data }) {
               BackEnd
             </p>
           </div>
+          }
           <div className='relative flex flex-col gap-1 items-center justify-center group '>
             <p className='text-black dark:text-white'>
               <a href={data.view} target='_blank'>

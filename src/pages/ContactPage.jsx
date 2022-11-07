@@ -1,5 +1,11 @@
 import React, { useContext, useState } from 'react'
-import { FaPhoneAlt, AiOutlineMail, MdLocationOn } from '../icons'
+import {
+  FaPhoneAlt,
+  AiOutlineMail,
+  MdLocationOn,
+  AiFillGithub,
+  AiFillLinkedin
+} from '../icons'
 import { IconBox, ReactButton, TextArea, TextField } from '../components'
 import Portfolio_Context from '../context'
 import { motion } from 'framer-motion'
@@ -70,7 +76,7 @@ function ContactPage () {
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: 100, opacity: 0 }}
       transition={{ delay: 0.3 }}
-      className='scroller relative w-screen md:w-full  md:h-full grid grid-cols-1 md:grid-cols-[40%,60%] items-center justify-center px:1 md:px-2 gap-5 md:gap-0'
+      className='scroller relative w-screen md:w-full py-1 md:py-0  md:h-full grid grid-cols-1 md:grid-cols-[40%,60%] items-center justify-center px:1 md:px-2 gap-5 md:gap-0'
     >
       <div className='flex flex-col gap-6'>
         <div className='mt-14 md:mt-7 ml-3 md:ml-0'>
@@ -90,6 +96,16 @@ function ContactPage () {
             icon={<AiOutlineMail />}
             text={'adarshkdev27'}
             type={'email'}
+          />
+          <IconBox
+            icon={<AiFillGithub />}
+            text={'https://github.com/'}
+            type={'git'}
+          />
+          <IconBox
+            icon={<AiFillLinkedin />}
+            text={'https://www.linkedin.com'}
+            type={"linkedin"}
           />
           <IconBox icon={<MdLocationOn />} text={'Kannur, Kerala'} />
         </div>

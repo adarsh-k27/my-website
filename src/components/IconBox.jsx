@@ -8,14 +8,15 @@ function IconBox ({ icon, text, type }) {
           {icon}
         </p>
         <div className='flex flex-col gap-1 w-full h-full justify-center'>
-          <h4 className='w-full max-w-[full] font-[oswald] text-sm md:text-sm text-black dark:text-white font-semibold md:font-bold tracking-wider'>
+          <h4 className='w-full max-w-[full] font-[oswald] text-[.84rem] text-black dark:text-white font-semibold md:font-bold tracking-wider'>
             {text}
           </h4>
-          {type === 'email' && (
-            <h4 className='text-sm md:text-sm font-[oswald] text-black dark:text-white font-semibold md:font-bold tracking-wider'>
-              @gmail.com
-            </h4>
-          )}
+
+          <h4 className='text-[.84rem] font-[oswald] text-black dark:text-white font-semibold md:font-bold tracking-wider'>
+            {(type == 'email' && '@gmail.com') ||
+              (type == 'git' && 'adarsh-k27/') ||
+              (type == 'linkedin' && '/in/adarshkradhakrishnan')}
+          </h4>
         </div>
       </div>
     </div>
