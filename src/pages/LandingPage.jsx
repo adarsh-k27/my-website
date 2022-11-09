@@ -58,7 +58,7 @@ function LandingPage ({ setOpen, open, setSelect, selectTag }) {
               bg={`bg-${color_change && color_change}`}
               hover='hover:dark:bg-white hover:bg-black/80'
               txt='text-white/80 dark:group-hover:text-black/80 group-hover:text-white/80'
-              Link='https://drive.google.com/file/d/1-L2wQcbVmZRDpfPiU3ynYBJwGyb8Npma/view?usp=share_link'
+              Link='https://drive.google.com/file/d/1-_9MzLiueSXn9RHIp5yzjAiW-tlezLiy/view?usp=share_link'
             />
             <ReactButton
               text='More About'
