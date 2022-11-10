@@ -6,7 +6,7 @@ import {
   AiFillGithub,
   AiFillLinkedin
 } from '../icons'
-import { IconBox, ReactButton, TextArea, TextField } from '../components'
+import { IconBox, ReactButton, TextArea, TextField ,LinkBox} from '../components'
 import Portfolio_Context from '../context'
 import { motion } from 'framer-motion'
 import { ToastContainer, toast } from 'react-toastify'
@@ -97,12 +97,12 @@ function ContactPage () {
             text={'adarshkdev27'}
             type={'email'}
           />
-          <IconBox
+          <LinkBox
             icon={<AiFillGithub />}
             text={'https://github.com/'}
             type={'git'}
           />
-          <IconBox
+          <LinkBox
             icon={<AiFillLinkedin />}
             text={'https://www.linkedin.com'}
             type={"linkedin"}
