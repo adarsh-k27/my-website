@@ -43,7 +43,7 @@ function SideBar ({ open, setOpen,setSelect,selectTag }) {
       >
         <BiArrowBack className='block md:hidden dark:text-white/60 text-black/60 text-3xl' />
       </p>
-      <div className='w-full h-full max-h-screen  flex flex-col gap-[1rem] justify-center'>
+      <div className='w-full h-full max-h-screen overflow-y-scroll  flex flex-col gap-[1rem] justify-center'>
         <Navs
           icon={
             <AiFillHome className='text-black/70 dark:text-white/70 text-md ' />

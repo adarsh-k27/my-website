@@ -24,7 +24,7 @@ export const Projects = [{
         Title: "Food Delivery Web App",
         Features: ["Redux", "TailwindCss", "Cloudinary"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666642375/food-app_ypzmes.jpg",
-        Desc: "It Is An Food Delivery Web App.We Can Find Food Here and Buy It",
+        Desc: "It Is An Food Delivery Web App.We Can Find Food Here and Buy It. it is a User Freindly website.Admins Have some More Rights.Like Add Food Items,Catogery etc",
         git: "https://github.com/adarsh-k27/Food-Delivery-Web",
         view: "https://food-delivery-app-web.netlify.app/",
         backend: "https://github.com/adarsh-k27/food-delivery-backend"
@@ -33,7 +33,7 @@ export const Projects = [{
         Title: "Music Learning Web App ",
         Features: ["FireBase", "Context State", "Tailwind", "React"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666757432/music-app_bkjncf.jpg",
-        Desc: "Its An Music Learning Web App.Wecan Hear Music Here And Relax",
+        Desc: "Its An Music Learning Web App.Wecan Hear Music Here And Relax.We can Search Musics.The Users only have the access of Hearing.Admins Have the Rights To Add Song,Artist etc. ",
         git: "https://github.com/adarsh-k27/music-websi",
         view: "https://music-learning-web-app.netlify.app/",
         backend: "https://github.com/adarsh-k27/music-backend"
@@ -41,7 +41,7 @@ export const Projects = [{
         Title: "Happy Talky Chat App",
         Features: ["Socket.io", "React", "NodeJs"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666642365/chat-app-3_fdfywr.jpg",
-        Desc: "It Is An Chatting Application.Chat With Person Who is Already Logged In ,With Typing Indicater",
+        Desc: "It Is An Chatting Application.Chat With Person Who is Already Logged In ,With Typing Indicater.We Can Chat Instantky.Notifications also Get to Other Person.I create This By Using socketio.Its A Real Time Chatting Application.",
         git: "https://github.com/adarsh-k27/happy-talky",
         view: "https://happy-talky-chat-app.netlify.app/",
         backend: "https://github.com/adarsh-k27/happy-talky-backend"
@@ -49,7 +49,7 @@ export const Projects = [{
         Title: "Random Chat App",
         Features: ["Socket.Io", "React", "css"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666642383/chatapp-1_v0tcqs.jpg",
-        Desc: "Its An Random Chatting Application.We can select Person in It For Chatting",
+        Desc: "Its An Random Chatting Application.We can select Person in It For Chatting.Notifications also Get to Other Person.I create This By Using socketio.Its A Real Time Chatting Application.",
         git: "https://github.com/adarsh-k27/simple-responsive-react-chat-app",
         view: "https://dazzling-lolly-08748c.netlify.app/",
         backend: "https://github.com/adarsh-k27/react-chat-backend"
@@ -58,7 +58,7 @@ export const Projects = [{
         Title: "Responsive Company web",
         Features: ["React", "Css", "Bootstrap"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666761391/port-2_pcmbfm.jpg",
-        Desc: "Its a Simple Responsive Website For a Company",
+        Desc: "Its a Simple Responsive Website For a Company.Its a Landing Page Of A Company",
         git: "https://github.com/adarshk0027/portfolio-bootstrap",
         view: "https://starlit-gecko-6e709d.netlify.app/"
     },
@@ -74,7 +74,7 @@ export const Projects = [{
         Title: "Responsive Portfolio",
         Features: ["React", "Css"],
         Image: "https://res.cloudinary.com/doxpbnjnk/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1666760976/port_nipjzw.jpg",
-        Desc: "It Is A Simple Responsive Portfolio WebSite",
+        Desc: "It Is A Simple Responsive Portfolio WebSite.Its Show A Persons Skills And Information",
         git: "https://github.com/adarsh-k27/portfolio",
         view: "https://calm-taffy-e99e39.netlify.app/"
     },
