@@ -80,13 +80,16 @@ function LandingPage ({ setOpen, open, setSelect, selectTag }) {
             </p>
           </div>
           <div className='flex gap-5 items-center justify-center'>
-            <p className='text-black dark:text-white text-lg'>
+            <p className='text-black dark:text-white  text-xl md:text-2xl'>
               <a href='https://github.com/adarsh-k27' target={'_blank'}>
                 <AiFillGithub />
               </a>
             </p>
-            <p className='text-sky-800 dark:text-sky-400 text-lg'>
-              <a href='https://www.linkedin.com/in/adarshkradhakrishnan/' target={'_blank'}>
+            <p className='text-sky-800 dark:text-sky-400 text-xl md:text-2xl'>
+              <a
+                href='https://www.linkedin.com/in/adarshkradhakrishnan/'
+                target={'_blank'}
+              >
                 <AiFillLinkedin />
               </a>
             </p>
