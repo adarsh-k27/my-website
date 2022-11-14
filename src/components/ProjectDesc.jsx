@@ -6,7 +6,7 @@ import Portfolio_Context from '../context'
 function ProjectDesc ({ data }) {
   const { color_change } = useContext(Portfolio_Context)
   return (
-    <div className='w-full h-full flex-col gap-2'>
+    <div className='relative w-full h-full flex-col gap-2'>
       <div className=' pl-[.2rem] md:pl-[.5rem] flex flex-wrap gap-2 w-full '>
         {data.Features &&
           data.Features.map(feature => <Features text={feature} />)}
@@ -31,18 +31,18 @@ function ProjectDesc ({ data }) {
               FrontEnd
             </p>
           </div>
-          {
-            data.backend && <div className='relative flex flex-col gap-1 items-center justify-center group'>
-            <p className='dark:text-white text-black text-lg md:text-2xl'>
-              <a href={data.backend} target='_blank'>
-                <AiFillGithub />
-              </a>
-            </p>
-            <p className='hidden group-hover:block dark:text-white/70 text-black/70 text-sm text-[.7rem] absolute -bottom-4 '>
-              BackEnd
-            </p>
-          </div>
-          }
+          {data.backend && (
+            <div className='relative flex flex-col gap-1 items-center justify-center group'>
+              <p className='dark:text-white text-black text-lg md:text-2xl'>
+                <a href={data.backend} target='_blank'>
+                  <AiFillGithub />
+                </a>
+              </p>
+              <p className='hidden group-hover:block dark:text-white/70 text-black/70 text-sm text-[.7rem] absolute -bottom-4 '>
+                BackEnd
+              </p>
+            </div>
+          )}
           <div className='relative flex flex-col gap-1 items-center justify-center group '>
             <p className='text-black dark:text-white'>
               <a href={data.view} target='_blank'>
