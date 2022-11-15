@@ -6,7 +6,9 @@ export {
     AiFillGithub,
     AiOutlineMail,
     AiOutlineEye,
-    AiFillLinkedin
+    AiFillLinkedin,
+    AiFillCaretLeft,
+    AiFillCaretRight
 }
 from 'react-icons/ai'
 export {
